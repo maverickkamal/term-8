@@ -240,7 +240,6 @@ MIT License - see LICENSE file for details.
 
 - [INSTALL.md](INSTALL.md) - Detailed installation instructions for all platforms
 - [roms/README.md](roms/README.md) - Information about ROMs and where to find more
-- [documentation/](documentation/) - Internal project documentation
 
 ---
 
