@@ -1,0 +1,22 @@
+{
+  "name": "term-8",
+  "description": "A CHIP-8 emulator with live interactive debugger for the terminal",
+  "version": "0.1.0",
+  "install": {
+    "command": "cargo build --release",
+    "description": "Build the Rust project in release mode"
+  },
+  "run": {
+    "command": "cargo run --release -- {rom_file}",
+    "description": "Run the emulator with a CHIP-8 ROM file",
+    "args": [
+      {
+        "name": "rom_file",
+        "description": "Path to the CHIP-8 ROM file to load",
+        "required": true
+      }
+    ]
+  }
+}
+
+
