@@ -156,3 +156,28 @@ Also verified one more time that games work. Played through several Tetris games
 
 Built the release binary with cargo build --release. The binary is only 4.5MB which is tiny! Rust optimization is insane.
 
+## My final thought
+
+This was one of my best hackclub projects tbh that's why I documented it. I learned so much:
+
+1. **Emulation is hard but not impossible** - CHIP-8 is beginner-friendly but you still gotta understand CPU architecture, memory, timing, etc.
+
+2. **Debugging is 50% of the work** - The input bug took HOURS to fix. Five different attempts before getting it right. That's just how it is.
+
+3. **Platform compatibility is annoying** - Windows has weird toolchain issues. WSL is a lifesaver. Cross-platform is harder than it looks. 
+
+4. **Documentation matters** - I spent a full day just writing docs and cleaning up and credits to AI for streamlining documentation process. But now anyone can understand and use this project.
+
+5. **Inspector Mode was worth it** - This isn't just another CHIP-8 emulator. Being able to see inside the CPU while games run is genuinely educational and cool.
+
+Would I do it again? Yes! 
+
+Would I choose Windows as my dev environment? Hell no lol, WSL all the way.
+
+
+
+I just hope josias make v6 :)
+
+
+Thanks Hack Club for the motivation to actually finish this!
+
