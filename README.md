@@ -23,7 +23,7 @@ term-8 is not just an emulator; it's an educational tool that transforms vintage
 **Prerequisites**: Rust 1.70 or higher ([install from rustup.rs](https://rustup.rs/))
 
 ```bash
-git clone https://github.com/yourusername/term-8.git
+git clone https://github.com/maverickkamal/term-8.git
 cd term-8
 cargo build --release
 ```
