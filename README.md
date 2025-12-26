@@ -6,6 +6,11 @@ A high-fidelity CHIP-8 emulator with an interactive debugging interface, designe
 
 term-8 is not just an emulator; it's an educational tool that transforms vintage gaming into an interactive learning experience. The Inspector Mode allows you to pause execution at any moment and examine the virtual machine's internal state, making it invaluable for understanding computer architecture and retro programming.
 
+<img width="1902" height="958" alt="Screenshot 2025-10-20 005950" src="https://github.com/user-attachments/assets/60f71757-619b-4501-899c-35c93dc8c406" />
+
+<img width="1461" height="847" alt="Screenshot 2025-10-19 012156" src="https://github.com/user-attachments/assets/393fc837-cf51-4a98-bbfc-1e90dfbb3c22" />
+
+
 ### Key Features
 
 - **Complete CHIP-8 Implementation**: All 35 original opcodes accurately emulated
