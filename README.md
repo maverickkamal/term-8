@@ -1,10 +1,10 @@
 # term-8: CHIP-8 Terminal Emulator
 
-term-8 is a Rust-based CHIP-8 emulator for the terminal. It runs classic CHIP-8 ROMs and includes an inspector mode for stepping through execution, viewing CPU state, and debugging programs.
+term-8 is a Rust CHIP-8 emulator for the terminal. It runs CHIP-8 ROMs and includes an inspector mode for stepping through execution, viewing CPU state, and debugging programs.
 
 ## Overview
 
-The project focuses on a faithful CHIP-8 implementation and a practical terminal debugger. You can run games at normal speed, pause at any time, and inspect registers, stack state, timers, and upcoming instructions.
+The project focuses on a correct CHIP-8 implementation and a practical terminal debugger. You can run games at normal speed, pause at any time, and inspect registers, stack state, timers, and upcoming instructions.
 
 <img width="1902" height="958" alt="Screenshot 2025-10-20 005950" src="https://github.com/user-attachments/assets/60f71757-619b-4501-899c-35c93dc8c406" />
 
@@ -14,7 +14,7 @@ The project focuses on a faithful CHIP-8 implementation and a practical terminal
 ### Features
 
 - **CHIP-8 implementation**: Supports all 35 original opcodes
-- **Inspector mode**: Multi-panel debugging interface with live CPU state
+- **Inspector mode**: Debugging interface with live CPU state
 - **Live disassembler**: Shows upcoming instructions in readable assembly
 - **Single-step execution**: Execute one instruction at a time
 - **Checkpoint support**: Save and restore emulator state
@@ -90,7 +90,7 @@ CHIP-8 Keypad        Keyboard
 
 ## Inspector Mode
 
-Inspector mode provides a full view of emulator state during execution.
+Inspector mode shows the emulator state during execution.
 
 ### Interface Layout
 
@@ -144,7 +144,7 @@ Inspector mode provides a full view of emulator state during execution.
 
 ## Available ROMs
 
-term-8 includes three public domain ROMs for testing:
+term-8 includes three public domain ROMs:
 
 1. **IBM Logo** (`ibm_logo.ch8`): Displays the IBM logo, useful for testing basic functionality
 2. **Pong** (`pong.ch8`): Single-player Pong (1: move up, Q: move down)
@@ -153,11 +153,11 @@ term-8 includes three public domain ROMs for testing:
 For additional ROMs, see:
 - [chip8-roms](https://github.com/kripod/chip8-roms) - Public domain game collection
 - [CHIP-8 Archive](https://johnearnest.github.io/chip8Archive/) - Curated ROM library
-- [Test Suite](https://github.com/Timendus/chip8-test-suite) - Comprehensive tests
+- [Test Suite](https://github.com/Timendus/chip8-test-suite) - CHIP-8 test ROMs
 
 ## Educational Applications
 
-term-8 is useful for learning and teaching:
+term-8 can be useful for learning and teaching:
 
 - **Computer Architecture**: Observe CPU, memory, and I/O behavior
 - **Assembly Language**: Inspect CHIP-8 instructions during execution
@@ -184,7 +184,7 @@ See [INSTALL.md](INSTALL.md) for detailed platform-specific instructions.
 
 ## Performance
 
-term-8 runs at 60 frames per second with configurable CPU speed. The default setting (10 cycles per frame, 600 Hz) works well for most games. Adjust with `--speed` for faster/slower execution.
+term-8 runs at 60 frames per second with configurable CPU speed. The default setting (10 cycles per frame, 600 Hz) works for most games. Use `--speed` to adjust execution speed.
 
 ## Terminal Compatibility
 
