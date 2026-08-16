@@ -1,25 +1,25 @@
 # term-8: CHIP-8 Terminal Emulator
 
-A high-fidelity CHIP-8 emulator with an interactive debugging interface, designed to run classic 1970s games directly in your terminal while providing deep insight into how they work.
+term-8 is a Rust-based CHIP-8 emulator for the terminal. It runs classic CHIP-8 ROMs and includes an inspector mode for stepping through execution, viewing CPU state, and debugging programs.
 
 ## Overview
 
-term-8 is not just an emulator; it's an educational tool that transforms vintage gaming into an interactive learning experience. The Inspector Mode allows you to pause execution at any moment and examine the virtual machine's internal state, making it invaluable for understanding computer architecture and retro programming.
+The project focuses on a faithful CHIP-8 implementation and a practical terminal debugger. You can run games at normal speed, pause at any time, and inspect registers, stack state, timers, and upcoming instructions.
 
 <img width="1902" height="958" alt="Screenshot 2025-10-20 005950" src="https://github.com/user-attachments/assets/60f71757-619b-4501-899c-35c93dc8c406" />
 
 <img width="1461" height="847" alt="Screenshot 2025-10-19 012156" src="https://github.com/user-attachments/assets/393fc837-cf51-4a98-bbfc-1e90dfbb3c22" />
 
 
-### Key Features
+### Features
 
-- **Complete CHIP-8 Implementation**: All 35 original opcodes accurately emulated
-- **Inspector Mode**: Multi-panel debugging interface with real-time CPU state visualization
-- **Live Disassembler**: See upcoming instructions translated to human-readable assembly
-- **Single-Step Execution**: Step through programs one instruction at a time
-- **Checkpoint System**: Save and restore emulator state for experimentation
-- **CRT Display Effects**: Authentic retro aesthetics with scanlines and pixel ghosting
-- **60 FPS Performance**: Smooth gameplay with accurate timing
+- **CHIP-8 implementation**: Supports all 35 original opcodes
+- **Inspector mode**: Multi-panel debugging interface with live CPU state
+- **Live disassembler**: Shows upcoming instructions in readable assembly
+- **Single-step execution**: Execute one instruction at a time
+- **Checkpoint support**: Save and restore emulator state
+- **CRT display effects**: Optional scanline and pixel ghosting effects
+- **60 FPS timing**: Runs with accurate frame and timer behavior
 
 ## Quick Start
 
@@ -90,7 +90,7 @@ CHIP-8 Keypad        Keyboard
 
 ## Inspector Mode
 
-The Inspector Mode is term-8's defining feature, providing a comprehensive view of the emulator's internal state.
+Inspector mode provides a full view of emulator state during execution.
 
 ### Interface Layout
 
@@ -142,26 +142,6 @@ The Inspector Mode is term-8's defining feature, providing a comprehensive view 
 - `rand`: Random number generation
 - `clap`: Command-line argument parsing
 
-### Project Structure
-
-```
-term-8/
-├── src/
-│   ├── main.rs           - Entry point and CLI
-│   ├── emulator.rs       - Core CHIP-8 virtual machine
-│   ├── opcodes.rs        - Instruction implementations
-│   ├── ui.rs             - Terminal user interface
-│   └── disassembler.rs   - Assembly translation
-├── roms/
-│   ├── ibm_logo.ch8      - Test ROM
-│   ├── pong.ch8          - Classic Pong
-│   └── tetris.ch8        - Tetris implementation
-├── documentation/        - Internal documentation
-├── README.md             - This file
-├── INSTALL.md            - Installation instructions
-└── LICENSE               - MIT License
-```
-
 ## Available ROMs
 
 term-8 includes three public domain ROMs for testing:
@@ -177,13 +157,13 @@ For additional ROMs, see:
 
 ## Educational Applications
 
-term-8 is designed for learning and teaching:
+term-8 is useful for learning and teaching:
 
-- **Computer Architecture**: Observe how CPU, memory, and I/O interact
-- **Assembly Language**: See high-level game logic translated to machine instructions
-- **Debugging Techniques**: Practice step-through debugging and state inspection
-- **Retro Computing**: Understand 1970s programming constraints and solutions
-- **Emulator Development**: Study the source code to learn emulation principles
+- **Computer Architecture**: Observe CPU, memory, and I/O behavior
+- **Assembly Language**: Inspect CHIP-8 instructions during execution
+- **Debugging Techniques**: Practice stepping and state inspection
+- **Retro Computing**: Explore 1970s-era virtual machine constraints
+- **Emulator Development**: Study a complete Rust emulator codebase
 
 ## Building from Source
 
@@ -245,7 +225,3 @@ MIT License - see LICENSE file for details.
 
 - [INSTALL.md](INSTALL.md) - Detailed installation instructions for all platforms
 - [roms/README.md](roms/README.md) - Information about ROMs and where to find more
-
----
-
-**term-8** - Bringing 1970s computing to the modern terminal
